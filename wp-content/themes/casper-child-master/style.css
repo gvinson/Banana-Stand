@@ -1,0 +1,125 @@
+/*
+  Theme Name:       Casper Child
+  Theme URI:        https://github.com/lacymorrow/casper-wp
+  Author:           Lacy Morrow
+  Author URI:       http://lacymorrow.com
+  Description:      Casper Child Theme
+  Version:          1.0.0
+  Template:         casper-master
+  Usage: Copy the casper-child folder into your wp-content/themes/ directory and activate it in the dashboard.
+*/
+
+/* ----- Begin Customizations Here - Enjoy :) ----- */
+
+/* 
+	GENERAL STYLES 
+*/
+* {
+	outline: none;
+}
+body {
+	font-size: 18px;
+}
+a:hover {
+	color: #906F1C;
+	text-decoration: none !important;
+}
+
+
+/*
+	HEADER STYLES
+ */
+.site-head {
+	max-height: 20em;
+	background: none;
+	background-color: #CFC627;
+	background-position: center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+@media only screen and (max-width: 900px) {
+	.site-head {
+		padding: 0;
+	}
+}
+.site-header:after {
+	z-index: 1 !important;
+}
+
+/*
+	NAVIGATION STYLES
+ */
+.menu {
+	position: relative;
+}
+.nav-menu {
+	position: absolute;
+	right: 0;
+}
+@media screen and (min-width: 601px) {
+	.main-navigation a {
+		transition: all 0.25s ease-in-out;
+		border-bottom: 2px solid transparent;
+	}
+	.main-navigation a:hover {
+		background-color: transparent;
+		border-bottom-color: #fff;
+		padding-bottom: 2px;
+	}
+}
+ .main-navigation a {
+ 	padding: 4px 0 0;
+ 	margin: 8px 20px;
+ 	color: #fff;
+ }
+ .main-navigation a:hover {
+ 	background-color: transparent;
+ }
+
+/*
+	BLOG POST STYLES
+ */
+.blog-title a:hover {
+	color: #fff;
+}
+h1.post-title {
+	font-size: 4rem;
+}
+@media only screen and (max-width: 900px) {
+	h1.post-title {
+		font-size: 3rem;
+	}
+}
+.comments-area {
+	width: 90%;
+}
+
+/*
+	WIDGETS
+ */
+.widget-area aside {
+	height: auto;
+}
+
+/*
+	FOOTER
+ */
+.site-footer {
+	background-color: #fff;
+}
+
+/*
+	POSTS
+ */
+.older-posts, .newer-posts, .form-submit #submit {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.pagination a {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+button, input[type=button], input[type=reset], input[type=submit], button:hover, input[type=button]:hover, input[type=reset]:hover, input[type=submit]:hover {
+	box-shadow: 0 0 0;
+}
