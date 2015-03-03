@@ -76,6 +76,10 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
+
+RewriteCond %{HTTP_HOST} ^nannerstand.com
+RewriteRule (.*) http://www.nannerstand.com/$1 [R=301,L]
+
 </IfModule>
 
 # END WordPress
